@@ -1,0 +1,179 @@
+\hypertarget{class_graph}{}\doxysection{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+
+
+This is a class \mbox{\hyperlink{class_graph}{Graph}}.  
+
+
+
+
+{\ttfamily \#include $<$Q1.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph_af3ff6b295df8bf3bee0bafd7c7d56915}{Graph}} (int \mbox{\hyperlink{class_graph_a2b722f7cfa7a21e4cb5fae488b3d4dcc}{V}})
+\item 
+void \mbox{\hyperlink{class_graph_ad8c10df34357b2cd865c81e0c4f0bd8c}{add\+Edge}} (int u, int v)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_graph_ad8c10df34357b2cd865c81e0c4f0bd8c}{add\+Edge()}} method This function is mainly used to add a directed edge from vertex u to vertex v \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a758ef342de92c7edbb4ce74de3c4cd9d}{find\+S\+C\+Cs}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_graph_a758ef342de92c7edbb4ce74de3c4cd9d}{find\+S\+C\+Cs()}} method The main function that finds and prints the strongly connected components. Call this function as follow\+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_graph}{Graph}} \mbox{\hyperlink{class_graph_a054a8e4811b2900b08610c32ef6d0892}{get\+Reverse}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_graph_a054a8e4811b2900b08610c32ef6d0892}{get\+Reverse()}} method The function that returns reverse (or transpose) of the graph Call this function as follow\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_graph_aa841dd11889196e325455635c35b9044}{get\+Finishing\+Time}} (int v, bool vis\mbox{[}$\,$\mbox{]}, stack$<$ int $>$ \&s)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_graph_aa841dd11889196e325455635c35b9044}{get\+Finishing\+Time()}} method This function is mainly used to get the finishing time of the vertices when a D\+FS is implemented on this \mbox{\hyperlink{class_graph}{Graph}} in the form of stack. The top element of stack has the maximum finishing time \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a6ab06ebd3bad858a6fadf9efd72cdf60}{D\+FS}} (int v, bool vis\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_graph_a6ab06ebd3bad858a6fadf9efd72cdf60}{D\+F\+S()}} method This is a recursive function to print D\+FS starting from v. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_graph_a2b722f7cfa7a21e4cb5fae488b3d4dcc}{V}}
+\item 
+list$<$ int $>$ $\ast$ \mbox{\hyperlink{class_graph_a04ab9c17ad31aa036def8db0f88b035b}{adj}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a class \mbox{\hyperlink{class_graph}{Graph}}. 
+
+This class contains an integer variable about the number of Vertices and an array of Adjacency Lists. It is basically used to initialise a graph with its vertices and adjacency list. The class also contains some other member functions 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graph_af3ff6b295df8bf3bee0bafd7c7d56915}\label{class_graph_af3ff6b295df8bf3bee0bafd7c7d56915}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{int}]{V }\end{DoxyParamCaption})}
+
+A constructor of the \mbox{\hyperlink{class_graph}{Graph}} class. 
+\begin{DoxyParams}{Parameters}
+{\em v} & is an integer argument representing the number of Vertces in the \mbox{\hyperlink{class_graph}{Graph}} This constructor intialises a member of the \mbox{\hyperlink{class_graph}{Graph}} Class with the number of vertices and allocates memory to those number of Adjacency Lists This function is called automatically when object of corresponding class is made \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_ad8c10df34357b2cd865c81e0c4f0bd8c}\label{class_graph_ad8c10df34357b2cd865c81e0c4f0bd8c}} 
+\index{Graph@{Graph}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily void Graph\+::add\+Edge (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_graph_ad8c10df34357b2cd865c81e0c4f0bd8c}{add\+Edge()}} method This function is mainly used to add a directed edge from vertex u to vertex v 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & is an integer argument \\
+\hline
+{\em w} & is an integer constant Call this function as follow\+: 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\mbox{\hyperlink{class_graph_ad8c10df34357b2cd865c81e0c4f0bd8c}{addEdge}}(parent,child)}
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graph_a6ab06ebd3bad858a6fadf9efd72cdf60}\label{class_graph_a6ab06ebd3bad858a6fadf9efd72cdf60}} 
+\index{Graph@{Graph}!DFS@{DFS}}
+\index{DFS@{DFS}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{DFS()}{DFS()}}
+{\footnotesize\ttfamily void Graph\+::\+D\+FS (\begin{DoxyParamCaption}\item[{int}]{v,  }\item[{bool}]{vis\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_graph_a6ab06ebd3bad858a6fadf9efd72cdf60}{D\+F\+S()}} method This is a recursive function to print D\+FS starting from v. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & is an integer argument \\
+\hline
+{\em vis} & is a boolean array Call this function as follow\+: 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\mbox{\hyperlink{class_graph_a6ab06ebd3bad858a6fadf9efd72cdf60}{DFS}}(vertices,visited)}
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graph_a758ef342de92c7edbb4ce74de3c4cd9d}\label{class_graph_a758ef342de92c7edbb4ce74de3c4cd9d}} 
+\index{Graph@{Graph}!findSCCs@{findSCCs}}
+\index{findSCCs@{findSCCs}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{findSCCs()}{findSCCs()}}
+{\footnotesize\ttfamily void Graph\+::find\+S\+C\+Cs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_graph_a758ef342de92c7edbb4ce74de3c4cd9d}{find\+S\+C\+Cs()}} method The main function that finds and prints the strongly connected components. Call this function as follow\+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_graph_a758ef342de92c7edbb4ce74de3c4cd9d}{findSCCs}}()}
+\end{DoxyCode}
+ $<$A stack data structure variable
+
+$<$visited array to get the finishing times
+
+$<$A \mbox{\hyperlink{class_graph}{Graph}} variable\mbox{\Hypertarget{class_graph_aa841dd11889196e325455635c35b9044}\label{class_graph_aa841dd11889196e325455635c35b9044}} 
+\index{Graph@{Graph}!getFinishingTime@{getFinishingTime}}
+\index{getFinishingTime@{getFinishingTime}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getFinishingTime()}{getFinishingTime()}}
+{\footnotesize\ttfamily void Graph\+::get\+Finishing\+Time (\begin{DoxyParamCaption}\item[{int}]{v,  }\item[{bool}]{vis\mbox{[}$\,$\mbox{]},  }\item[{stack$<$ int $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_graph_aa841dd11889196e325455635c35b9044}{get\+Finishing\+Time()}} method This function is mainly used to get the finishing time of the vertices when a D\+FS is implemented on this \mbox{\hyperlink{class_graph}{Graph}} in the form of stack. The top element of stack has the maximum finishing time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & is an integer argument \\
+\hline
+{\em vis} & is a boolean array \\
+\hline
+{\em s} & is an integer stack data structure Call this function as follow\+: 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\mbox{\hyperlink{class_graph_aa841dd11889196e325455635c35b9044}{getFinishingTime}}(vertices,visited,stack)}
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graph_a054a8e4811b2900b08610c32ef6d0892}\label{class_graph_a054a8e4811b2900b08610c32ef6d0892}} 
+\index{Graph@{Graph}!getReverse@{getReverse}}
+\index{getReverse@{getReverse}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getReverse()}{getReverse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}} Graph\+::get\+Reverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_graph_a054a8e4811b2900b08610c32ef6d0892}{get\+Reverse()}} method The function that returns reverse (or transpose) of the graph Call this function as follow\+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_graph_a054a8e4811b2900b08610c32ef6d0892}{getReverse}}()}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+a member of the \mbox{\hyperlink{class_graph}{Graph}} class 
+\end{DoxyReturn}
+$<$A \mbox{\hyperlink{class_graph}{Graph}} variable for the complement graph
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graph_a04ab9c17ad31aa036def8db0f88b035b}\label{class_graph_a04ab9c17ad31aa036def8db0f88b035b}} 
+\index{Graph@{Graph}!adj@{adj}}
+\index{adj@{adj}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{adj}{adj}}
+{\footnotesize\ttfamily list$<$int$>$$\ast$ Graph\+::adj\hspace{0.3cm}{\ttfamily [private]}}
+
+An array of Adjacency Lists basically used for \mbox{\hyperlink{class_graph}{Graph}} representation \mbox{\Hypertarget{class_graph_a2b722f7cfa7a21e4cb5fae488b3d4dcc}\label{class_graph_a2b722f7cfa7a21e4cb5fae488b3d4dcc}} 
+\index{Graph@{Graph}!V@{V}}
+\index{V@{V}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily int Graph\+::V\hspace{0.3cm}{\ttfamily [private]}}
+
+Number of Verices in the \mbox{\hyperlink{class_graph}{Graph}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+B\+P\+H\+C/\+D\+A\+A/\+Assignment-\/1/Q1.\+h\item 
+H\+:/\+B\+P\+H\+C/\+D\+A\+A/\+Assignment-\/1/Q1.\+cpp\end{DoxyCompactItemize}

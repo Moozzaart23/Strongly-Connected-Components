@@ -1,0 +1,210 @@
+\hypertarget{class_graph}{}\doxysection{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+
+
+This is a class \mbox{\hyperlink{class_graph}{Graph}}.  
+
+
+
+
+{\ttfamily \#include $<$Q2.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph_af3ff6b295df8bf3bee0bafd7c7d56915}{Graph}} (int V)
+\item 
+void \mbox{\hyperlink{class_graph_a575a61fd7176a4f55971611bc058aef0}{add\+Edge}} (ll x, ll y)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_graph_a575a61fd7176a4f55971611bc058aef0}{add\+Edge()}} method This function is mainly used to add a directed edge from vertex u to vertex v \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_ad367e58ebe0881a2320ca2e624d3022e}{dfs}} (map$<$ ll, vector$<$ ll $>$$>$\mbox{\hyperlink{class_graph_a4f089a88b192424f92784e6aecbc8b5f}{g}}, ll \mbox{\hyperlink{class_graph_a23324531ae99747b494ef163d9339da7}{v}}, map$<$ ll, vector$<$ ll $>$$>$ \&ans, map$<$ ll, ll $>$ \&vis)
+\begin{DoxyCompactList}\small\item\em dfs(\+Adjacency\+List G,\+Vertex V,\+Visted\+Vertices Ans, Visited\+Array Vis) method This is a recursive function to print D\+FS starting from V \end{DoxyCompactList}\item 
+map$<$ ll, vector$<$ ll $>$ $>$ \mbox{\hyperlink{class_graph_a0d489d3efb929df985170be79536be7e}{rev}} (map$<$ ll, vector$<$ ll $>$$>$\mbox{\hyperlink{class_graph_a4f089a88b192424f92784e6aecbc8b5f}{g}})
+\begin{DoxyCompactList}\small\item\em rev( Adjacency\+List G) method The function that returns reverse (or transpose) of the graph Call this function as follow\+: \end{DoxyCompactList}\item 
+map$<$ ll, vector$<$ ll $>$ $>$ \mbox{\hyperlink{class_graph_a5ce4d0f57f3bd72e612a7e20f353a326}{sub}} (map$<$ ll, vector$<$ ll $>$$>$ a, map$<$ ll, vector$<$ ll $>$$>$ b)
+\begin{DoxyCompactList}\small\item\em sub(\+Adjacency\+List A,\+Adjacency\+List B) method This function generates a graph which contains vertex which are there in \mbox{\hyperlink{class_graph}{Graph}} A but not in \mbox{\hyperlink{class_graph}{Graph}} B \end{DoxyCompactList}\item 
+map$<$ ll, vector$<$ ll $>$ $>$ \mbox{\hyperlink{class_graph_ab0c074992721bcdacafbeda30244ded2}{Union}} (map$<$ ll, vector$<$ ll $>$$>$ a, map$<$ ll, vector$<$ ll $>$$>$ b)
+\begin{DoxyCompactList}\small\item\em Union(\+Adjacency\+List A,\+Adjacency\+List B) method This function generates a graph which contains vertex which are there in \mbox{\hyperlink{class_graph}{Graph}} A or in \mbox{\hyperlink{class_graph}{Graph}} B Call this function as follow\+: \end{DoxyCompactList}\item 
+map$<$ ll, vector$<$ ll $>$ $>$ \mbox{\hyperlink{class_graph_a9900dafa483375c19ed8de9644367eeb}{intersect}} (map$<$ ll, vector$<$ ll $>$$>$ a, map$<$ ll, vector$<$ ll $>$$>$ b)
+\begin{DoxyCompactList}\small\item\em Intersect(\+Adjacency\+List A,\+Adjacency\+List B) method This function generates a graph which contains vertex which are there in \mbox{\hyperlink{class_graph}{Graph}} A and in \mbox{\hyperlink{class_graph}{Graph}} B Call this function as follow\+: \end{DoxyCompactList}\item 
+map$<$ ll, vector$<$ ll $>$ $>$ \mbox{\hyperlink{class_graph_ab79609e3c927c62e28731a5a124ffe98}{Desc}} (map$<$ ll, vector$<$ ll $>$$>$ \mbox{\hyperlink{class_graph_a4f089a88b192424f92784e6aecbc8b5f}{g}}, ll \mbox{\hyperlink{class_graph_a23324531ae99747b494ef163d9339da7}{v}})
+\begin{DoxyCompactList}\small\item\em Desc(\+Adjacency\+List G,vertex V) method This function generates a graph with vertex A and its descendants. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a44987640ff8520b5254a327bf71d6588}{D\+C\+SC}} (map$<$ ll, vector$<$ ll $>$$>$\mbox{\hyperlink{class_graph_a4f089a88b192424f92784e6aecbc8b5f}{g}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_graph_a44987640ff8520b5254a327bf71d6588}{D\+C\+S\+C()}} method This function returns the strongly connected components in the graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_graph_a23324531ae99747b494ef163d9339da7}{v}}
+\item 
+int \mbox{\hyperlink{class_graph_aad9ec1cab3e64002e1a8b805d7b75ea2}{e}}
+\item 
+map$<$ ll, vector$<$ ll $>$ $>$ \mbox{\hyperlink{class_graph_a4f089a88b192424f92784e6aecbc8b5f}{g}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a class \mbox{\hyperlink{class_graph}{Graph}}. 
+
+This class contains an integer variable about the number of Vertices and an hash data structure or map of Adjacency Lists. It is basically used to initialise a graph with its vertices and adjacency list. The class also contains some other member functions 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graph_af3ff6b295df8bf3bee0bafd7c7d56915}\label{class_graph_af3ff6b295df8bf3bee0bafd7c7d56915}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{int}]{V }\end{DoxyParamCaption})}
+
+A constructor of the \mbox{\hyperlink{class_graph}{Graph}} class. 
+\begin{DoxyParams}{Parameters}
+{\em v} & is an integer argument representing the number of Vertces in the \mbox{\hyperlink{class_graph}{Graph}} This constructor intialises a member of the \mbox{\hyperlink{class_graph}{Graph}} Class with the number of vertices and allocates memory to those number of Adjacency Lists This function is called automatically when object of corresponding class is made \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_a575a61fd7176a4f55971611bc058aef0}\label{class_graph_a575a61fd7176a4f55971611bc058aef0}} 
+\index{Graph@{Graph}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily void Graph\+::add\+Edge (\begin{DoxyParamCaption}\item[{ll}]{x,  }\item[{ll}]{y }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_graph_a575a61fd7176a4f55971611bc058aef0}{add\+Edge()}} method This function is mainly used to add a directed edge from vertex u to vertex v 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & is an integer argument \\
+\hline
+{\em w} & is an integer constant Call this function as follow\+: 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\mbox{\hyperlink{class_graph_a575a61fd7176a4f55971611bc058aef0}{addEdge}}(parent,child)}
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graph_a44987640ff8520b5254a327bf71d6588}\label{class_graph_a44987640ff8520b5254a327bf71d6588}} 
+\index{Graph@{Graph}!DCSC@{DCSC}}
+\index{DCSC@{DCSC}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{DCSC()}{DCSC()}}
+{\footnotesize\ttfamily void Graph\+::\+D\+C\+SC (\begin{DoxyParamCaption}\item[{map$<$ ll, vector$<$ ll $>$$>$}]{g }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_graph_a44987640ff8520b5254a327bf71d6588}{D\+C\+S\+C()}} method This function returns the strongly connected components in the graph. 
+
+\begin{DoxyReturn}{Returns}
+Prints the vertexes in all the strongly connected components 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_ab79609e3c927c62e28731a5a124ffe98}\label{class_graph_ab79609e3c927c62e28731a5a124ffe98}} 
+\index{Graph@{Graph}!Desc@{Desc}}
+\index{Desc@{Desc}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Desc()}{Desc()}}
+{\footnotesize\ttfamily map$<$ ll, vector$<$ ll $>$ $>$ Graph\+::\+Desc (\begin{DoxyParamCaption}\item[{map$<$ ll, vector$<$ ll $>$$>$}]{g,  }\item[{ll}]{v }\end{DoxyParamCaption})}
+
+
+
+Desc(\+Adjacency\+List G,vertex V) method This function generates a graph with vertex A and its descendants. 
+
+\begin{DoxyReturn}{Returns}
+Adjacency\+List of the resultant graph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_ad367e58ebe0881a2320ca2e624d3022e}\label{class_graph_ad367e58ebe0881a2320ca2e624d3022e}} 
+\index{Graph@{Graph}!dfs@{dfs}}
+\index{dfs@{dfs}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{dfs()}{dfs()}}
+{\footnotesize\ttfamily void Graph\+::dfs (\begin{DoxyParamCaption}\item[{map$<$ ll, vector$<$ ll $>$$>$}]{g,  }\item[{ll}]{v,  }\item[{map$<$ ll, vector$<$ ll $>$$>$ \&}]{ans,  }\item[{map$<$ ll, ll $>$ \&}]{vis }\end{DoxyParamCaption})}
+
+
+
+dfs(\+Adjacency\+List G,\+Vertex V,\+Visted\+Vertices Ans, Visited\+Array Vis) method This is a recursive function to print D\+FS starting from V 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & is an integer argument \\
+\hline
+{\em Vis} & is a map data structure Call this function as follow\+: \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graph_a9900dafa483375c19ed8de9644367eeb}\label{class_graph_a9900dafa483375c19ed8de9644367eeb}} 
+\index{Graph@{Graph}!intersect@{intersect}}
+\index{intersect@{intersect}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily map$<$ ll, vector$<$ ll $>$ $>$ Graph\+::intersect (\begin{DoxyParamCaption}\item[{map$<$ ll, vector$<$ ll $>$$>$}]{a,  }\item[{map$<$ ll, vector$<$ ll $>$$>$}]{b }\end{DoxyParamCaption})}
+
+
+
+Intersect(\+Adjacency\+List A,\+Adjacency\+List B) method This function generates a graph which contains vertex which are there in \mbox{\hyperlink{class_graph}{Graph}} A and in \mbox{\hyperlink{class_graph}{Graph}} B Call this function as follow\+: 
+
+\begin{DoxyReturn}{Returns}
+Adjacency\+List of the Intersection graph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_a0d489d3efb929df985170be79536be7e}\label{class_graph_a0d489d3efb929df985170be79536be7e}} 
+\index{Graph@{Graph}!rev@{rev}}
+\index{rev@{rev}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{rev()}{rev()}}
+{\footnotesize\ttfamily map$<$ ll, vector$<$ ll $>$ $>$ Graph\+::rev (\begin{DoxyParamCaption}\item[{map$<$ ll, vector$<$ ll $>$$>$}]{g }\end{DoxyParamCaption})}
+
+
+
+rev( Adjacency\+List G) method The function that returns reverse (or transpose) of the graph Call this function as follow\+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_graph_a0d489d3efb929df985170be79536be7e}{rev}}()}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+hash data structure of the transpose graph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_a5ce4d0f57f3bd72e612a7e20f353a326}\label{class_graph_a5ce4d0f57f3bd72e612a7e20f353a326}} 
+\index{Graph@{Graph}!sub@{sub}}
+\index{sub@{sub}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{sub()}{sub()}}
+{\footnotesize\ttfamily map$<$ ll, vector$<$ ll $>$ $>$ Graph\+::sub (\begin{DoxyParamCaption}\item[{map$<$ ll, vector$<$ ll $>$$>$}]{a,  }\item[{map$<$ ll, vector$<$ ll $>$$>$}]{b }\end{DoxyParamCaption})}
+
+
+
+sub(\+Adjacency\+List A,\+Adjacency\+List B) method This function generates a graph which contains vertex which are there in \mbox{\hyperlink{class_graph}{Graph}} A but not in \mbox{\hyperlink{class_graph}{Graph}} B 
+
+\begin{DoxyReturn}{Returns}
+Adjacency list of the transpose graph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_ab0c074992721bcdacafbeda30244ded2}\label{class_graph_ab0c074992721bcdacafbeda30244ded2}} 
+\index{Graph@{Graph}!Union@{Union}}
+\index{Union@{Union}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Union()}{Union()}}
+{\footnotesize\ttfamily map$<$ ll, vector$<$ ll $>$ $>$ Graph\+::\+Union (\begin{DoxyParamCaption}\item[{map$<$ ll, vector$<$ ll $>$$>$}]{a,  }\item[{map$<$ ll, vector$<$ ll $>$$>$}]{b }\end{DoxyParamCaption})}
+
+
+
+Union(\+Adjacency\+List A,\+Adjacency\+List B) method This function generates a graph which contains vertex which are there in \mbox{\hyperlink{class_graph}{Graph}} A or in \mbox{\hyperlink{class_graph}{Graph}} B Call this function as follow\+: 
+
+\begin{DoxyReturn}{Returns}
+Adjacency\+List of the Union graph 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graph_aad9ec1cab3e64002e1a8b805d7b75ea2}\label{class_graph_aad9ec1cab3e64002e1a8b805d7b75ea2}} 
+\index{Graph@{Graph}!e@{e}}
+\index{e@{e}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily int Graph\+::e}
+
+Number of edges in the \mbox{\hyperlink{class_graph}{Graph}} \mbox{\Hypertarget{class_graph_a4f089a88b192424f92784e6aecbc8b5f}\label{class_graph_a4f089a88b192424f92784e6aecbc8b5f}} 
+\index{Graph@{Graph}!g@{g}}
+\index{g@{g}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily map$<$ll,vector$<$ll$>$ $>$ Graph\+::g}
+
+hash data structure to store the adjacency list \mbox{\Hypertarget{class_graph_a23324531ae99747b494ef163d9339da7}\label{class_graph_a23324531ae99747b494ef163d9339da7}} 
+\index{Graph@{Graph}!v@{v}}
+\index{v@{v}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily int Graph\+::v}
+
+Number of Verices in the \mbox{\hyperlink{class_graph}{Graph}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Q2.\+h\item 
+Q2.\+cpp\end{DoxyCompactItemize}

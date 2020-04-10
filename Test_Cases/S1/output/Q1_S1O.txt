@@ -1,0 +1,5 @@
+The Strongly Connected Components in the enterd Graph are: 
+0 2 1 3 
+6 4 5 
+7 
+9 8 
